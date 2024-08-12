@@ -1,0 +1,77 @@
+ * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ }
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(6, 27, 122);
+  color: white;
+}
+
+.title {
+  padding: 2rem 0 0;
+  color: white;
+  font-size: 3rem;
+}
+
+.title:hover {
+  text-shadow: rgb(50, 135, 231) 1px 0 10px;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+ .share-itens li{
+  display: inline-block;
+  margin-right: 10px;
+} 
+
+#post-original {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid blue;
+  padding: 5px;
+  background: rgb(6, 27, 122);
+}
+
+#post-original p {
+ font-style: italic;
+ color: rgb(107, 124, 199);
+}
+
+#post-original a {
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+ }
+
+
+#post-original:hover {
+  background: rgb(11, 55, 231)
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  border: 2px solid blue;
+}
+
+.introduction p{
+  flex: 1;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+.introduction picture {
+  flex: 1;
+}
