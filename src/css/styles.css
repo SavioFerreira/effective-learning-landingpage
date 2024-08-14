@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
  }
+
 
 header {
   display: flex;
@@ -37,9 +39,8 @@ header {
 #post-original {
   display: flex;
   justify-content: center;
-  border-top: 2px solid blue;
   padding: 5px;
-  background: rgb(6, 27, 122);
+  background-image: linear-gradient(rgb(6, 27, 122), rgb(29, 58, 175));
 }
 
 #post-original p {
@@ -56,22 +57,48 @@ header {
 
 
 #post-original:hover {
-  background: rgb(11, 55, 231)
+  background: rgb(6, 27, 122);
 }
 
 .introduction {
   display: flex;
-  flex-direction: row;
-  padding: 2rem;
-  border: 2px solid blue;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  background: rgb(29, 58, 175);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.introduction :nth-child(1) {
+  flex: 45%;
+}
+
+.introduction :nth-child(2) {
+  flex: 55%;
 }
 
 .introduction p{
-  flex: 1;
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: rgb(116, 154, 204);
+  text-decoration: solid;
+  font-weight: bold;
 }
 
-.introduction picture {
-  flex: 1;
+img {
+  width: 600px;
+  height: 500px;
+}
+
+.img-box img.img-hover {
+  display: none;
+}
+.img-box:hover img.img-default {
+  display: none;
+}
+.img-box:hover img.img-hover {
+  display: inherit;
+  margin-bottom: 5px;
 }
